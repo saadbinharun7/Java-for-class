@@ -1,0 +1,29 @@
+Create a Banking System, where a user can create a new account, deposit money, withdraw money and
+check the balance. A BankAccount is identified by its name, account number and the amount of money
+available to that account. For today’s lab we will define the BankAccount class, create object and call
+some methods.
+What you need to do:
+1) Create a BankAccount class and add the following.
+a. Add 3 instance variables; name, id and balance.
+b. Create a constructor which will take parameters for all attributes. Inside the constructor,
+initialize the attributes with that parameter passed to the constructor.
+c. Add the following methods as described;
+i. public void deposit(double depAmount)
+Inside the method increase the balance by the depAmount amount.
+ii. public void withdraw(double withAmount)
+Inside the method decrease the balance by withAmount amount. Do necessary
+checks so that the balance does not become negative.
+iii. public double getBalance()
+Return the balance attribute from the method.
+iv. public void displayInfo()
+Inside the method, display the attributes in the format “Name:[name]; Id:[id];
+Balance:[balance]”.
+
+2) Now create another class Bank and implement the main method. In main method do the
+following.
+a. Create an object of the BankAccount class using the constructor you created and pass
+appropriate values. Assign the reference of the object to a variable name account. b. Call
+withdraw(...) method using the account variable.
+c. Call the displayInfo() method using the account variable.
+d. Deposit some money by executing the deposit(...) method.
+e. Display the balance using the getBalance() method.
