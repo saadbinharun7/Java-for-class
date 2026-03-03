@@ -1,0 +1,70 @@
+Create a Banking System, where a user can 1) create a new account, 2) deposit money to a specific
+account, 3) withdraw money from a specific account, 4) check the balance of a specific account, 5)
+view the details of a specific account, and 6) view the details of all accounts. Each Account is
+identified by its account number, balance, and the name of the account holder. The system should
+be able to handle multiple accounts.
+What you need to do:
+1) Create a BankAccount class under the uap package and add the following.
+a. Add 3 instance variables; name, id and balance.
+b. Create a constructor which will take parameters for all attributes. Inside the constructor,
+initialize the attributes with that parameter passed to the constructor.
+c. Add the following methods as described;
+i. public void deposit(double depAmount)
+Inside the method increase the balance by the “depAmount” amount.
+ii. public void withdraw(double withAmount)
+Inside the method decrease the balance by “withAmount” amount. Do
+necessary checks so that the balance does not become negative.
+iii. public double getBalance()
+Return the balance attribute from the method.
+iv. public String toString()
+Inside the method, display/print the value of the attributes.
+
+2) Now create an application class (that has the main method) named “Bank” (under uap.app
+package) which will have the main method.
+o In the main method, create an array/ArrayList of BankAccount type. If you choose an
+array, set the array size to 10. Name the array/ArrayList variable as accounts. After
+creating the array, provide the following menu on the console and take appropriate
+action. ▪ ‘1’ to create a new account.
+
+• So, for this option, take input for the 3 fields (name, accNum, balance)
+from the user. After taking the input, create a BankAccount object and
+add the object to the accounts array.
+
+▪ ‘2’ to deposit money.
+• For this option, you have to ask the user for the account number of the
+
+account s/he wants to deposit and amount of money s/he wants to
+deposit. After taking the input do the following.
+o Find the account from the Array
+o If the account is available in the list, call the deposit method for
+that object with appropriate parameters.
+
+▪ ‘3’ to withdraw money.
+• For this option, you have to ask the user for the account number of the
+account s/he wants to deposit and amount of money s/he wants to
+deposit. After taking the input do the following.
+o Find the account from the Array
+o If the account is available in the list, call the withdraw method for
+that object with appropriate parameters.
+
+▪ ‘4’ to display the balance of a specific account.
+• For this option, you have to ask the user for the account number of the
+account s/he wants to check the balance. After taking the input do the
+following.
+o Find the account from the Array
+o If the account is available in the list, call the getBalalnce() method
+for that object and print the output.
+▪ ‘5’ to display the details of a specific account.
+• For this option, you have to ask the user for the account number of the
+account s/he wants to view the details. After taking the input do the
+following.
+o Find the account from the Array
+o If the account is available in the list, call the display() method for
+that object.
+▪ ‘6’ to display the details of all accounts.
+• For this option, do the following.
+o Access each of the account object from the Array
+o Call the display() method for each object.
+
+▪ ‘0’ to exit the system.
+• Come out of the loop if the user chooses this option.
