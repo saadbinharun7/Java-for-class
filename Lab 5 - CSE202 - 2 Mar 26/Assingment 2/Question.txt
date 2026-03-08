@@ -1,0 +1,62 @@
+Develop a Student Course Enrollment Record System for the CSE department at UAP. The system will
+manage records for multiple students, where each student is identified by their name, ID, and an
+enrolled course. For simplicity, we will assume a student enrolls for a single course. The system
+should support the following functionalities:
+• Add a new Student’s information to the system.
+• Enroll a course for a specific student
+• View the list of students who have enrolled for a specific course.
+• View the details of a student
+
+• View the list of all students.The program should allow managing multiple students and their
+respective course enrollments efficiently.
+What you need to do:
+1) Create a Student class under the uap package and add the following inside the
+class. • Add instance variables; name (String), id (String), and enrolledCourse
+(String).
+• Create a constructor which will take parameters for name and id. Inside the constructor,
+initialize the respective attributes with the parameters.
+• Add the following methods as described
+i. public void enrollCourse(Course course)
+Inside the method, assign the course to enrolledCourse.
+ii. public void displayInfo()
+This method displays the attributes. Note: For displaying the enrolledCourse, call
+the displayInfo of the Course class.
+Or
+public String toString()
+From the method, return a String concatenating the values of all attributes
+
+2) Now create another class UapCse (under the uap.app package) and implement the main method.
+In the main method do the following.
+• In the main method, create an array/ArrayList of Student type. If you choose an array, set the
+array size to 10. Name the array/ArrayList variable as students. After creating the array,
+provide the following menu on the console and take appropriate action.
+a. ‘1’ to add a new Student.
+For this option, take input for the 2 fields (name and id) from the user. After taking the input,
+create a Student object and add the object to the students array.
+b. ‘2’ to enroll in a course for a student.
+For this option, you have to ask the user for the id of the student and the course information.
+After taking the input do the following.
+i. Find the student from the Array
+ii. If the student is available in the list, call the enrollCourse(...) method for that
+object with appropriate parameters.
+c. ‘3’ to display info of a specific student.
+For this option, you have to ask the user for the id of the student. After taking the input do
+the following.
+i. Find the student from the Array
+ii. If the student is available in the list, call displayInfo() (if displayInfo method in the
+class) or print the object (if you have toString()).
+
+d. ‘4’ to display the details of all students.
+For this option, do the following.
+i. Access each of the student object from the Array
+ii. call displayInfo() (if displayInfo method in the class) or print the object (if you have
+toString()).
+
+e. ‘5’ to display the details of all students registered for a specific course. For this option,
+you have to ask the user for the course. After taking the input do the following. i. Access
+each of the student object from the Array
+ii. If the student is enrolled for the course, call displayInfo() (if displayInfo method in
+the class) or print the object (if you have toString()).
+
+f. ‘0’ to exit the system.
+Come out of the loop if the user chooses this option.
